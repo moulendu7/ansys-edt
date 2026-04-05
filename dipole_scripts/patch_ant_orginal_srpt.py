@@ -741,18 +741,18 @@ oModule.InsertFrequencySweep("Setup1",
 		"SaveRadFields:="	, False,
 		"GenerateFieldsForAllFreqs:=", False
 	])
-oProject.SaveAs("C:\\Users\\moule\\OneDrive\\Documents\\Ansoft\\patch_final.aedt", True)
-oDesign.AnalyzeAll()
-oModule = oDesign.GetModule("ReportSetup")
-oModule.CreateReport("S Parameter Plot1", "Modal Solution Data", "Rectangular Plot", "Setup1 : Sweep", 
-	[
-		"Domain:="		, "Sweep"
-	], 
-	[
-		"Freq:="		, ["All"]
-	], 
-	[
-		"X Component:="		, "Freq",
-		"Y Component:="		, ["dB(S(1,1))"]
-	])
-oModule.AddMarker("S Parameter Plot1", "m1", "dB(S(1 1)) : Setup1 : Sweep : Cartesian", "2.38GHz")
+# oProject.SaveAs("C:\\Users\\moule\\OneDrive\\Documents\\Ansoft\\patch_final.aedt", True)
+# oDesign.AnalyzeAll()
+# oModule = oDesign.GetModule("ReportSetup")
+# oModule.CreateReport("S Parameter Plot1", "Modal Solution Data", "Rectangular Plot", "Setup1 : Sweep", 
+# 	[
+# 		"Domain:="		, "Sweep"
+# 	], 
+# 	[
+# 		"Freq:="		, ["All"]
+# 	], 
+# 	[
+# 		"X Component:="		, "Freq",
+# 		"Y Component:="		, ["dB(S(1,1))"]
+# 	])
+# oModule.AddMarker("S Parameter Plot1", "m1", "dB(S(1 1)) : Setup1 : Sweep : Cartesian", "2.38GHz")
