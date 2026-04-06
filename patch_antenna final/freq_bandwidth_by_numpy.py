@@ -14,12 +14,12 @@ if len(band_freqs) > 0:
     bw = f_high - f_low
 
     print("Bandwidth:")
-    print("Lower:", f_low, "GHz")
-    print("Upper:", f_high, "GHz")
-    print("BW:", bw, "GHz")
+    print("Lower:", f_low, "Hz")
+    print("Upper:", f_high, "Hz")
+    print("BW:", bw, "Hz")
 else:
     print("No bandwidth found")
 
 idx = np.argmin(s11)
-print("\nResonance Frequency:", freq[idx], "GHz")
+print("\nResonance Frequency:", freq[idx], "Hz")
 print("Min S11:", s11[idx], "dB")
